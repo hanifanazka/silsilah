@@ -28,4 +28,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Built PDF
         run: |
-          xvfb-run scribus -g -py .github/workflows/export_to_pdf.py -version 13 -bleedr 2 -compress 1 -info 'test title' -file 'test.pdf' -- testdoc.sla
+          xvfb-run scribus -g --python-script .github/workflows/export_to_pdf.py -version 13 -bleedr 2 -compress 1 -info 'test title' -file 'test.pdf' -- testdoc.sla
